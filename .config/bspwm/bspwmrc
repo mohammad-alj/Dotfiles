@@ -11,6 +11,14 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+# Borders
+bspc config border_width 2
+bspc config window_gap 10
+bspc config padding 10
+bspc config single_monocle false
+bspc config normal_border_color "#3E4564"
+bspc config focused_border_color "#6DD0C1"
+
 # Focus on hover
 bspc config focus_follows_pointer true
 
@@ -20,6 +28,7 @@ nitrogen --restore &
 picom &
 dunst &
 $HOME/.config/polybar/launch.sh &
+copyq &
 
 # Set cursor theme
 xsetroot -cursor_name left_ptr

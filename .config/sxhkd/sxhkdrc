@@ -10,6 +10,14 @@ super + q
 super + d
 	rofi -show drun
 
+# web browser
+super + Return
+	firefox
+
+# file explorer
+super + e
+	thunar
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -29,6 +37,15 @@ super + shift + {z,a}
 # close and kill
 super + {_,shift + }c
 	bspc node -{c,k}
+
+# Alternate between split directions
+super + {k,l,j,h}
+    bspc node -p {north,east,south,west}
+
+# Alternate split
+super + y
+    bspc node -n last
+
 
 # alternate between the tiled and monocle layout
 super + a
