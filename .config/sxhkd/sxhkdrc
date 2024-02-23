@@ -144,3 +144,7 @@ super + {h,j,k,l}
 # polybar launch script
 super + shift + p
     $HOME/.config/polybar/launch.sh
+
+# Language switching
+super + space
+    setxkbmap -query | grep -q 'layout:\s\+us' && setxkbmap ara || setxkbmap us
