@@ -38,10 +38,6 @@ super + shift + {z,a}
 super + {_,shift + }c
 	bspc node -{c,k}
 
-# Alternate between split directions
-super + {k,l,j,h}
-    bspc node -p {north,east,south,west}
-
 # Alternate split
 super + y
     bspc node -n last
@@ -134,7 +130,7 @@ super + alt + {h,j,k,l}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
-super + alt + shift + {Left,Down,Up,Right}
+super + alt + {Left,Down,Up,Right}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # move a floating window
