@@ -25,7 +25,7 @@ bspc config focus_follows_pointer true
 # Set cursor theme
 xsetroot -cursor_name left_ptr
 
-# Autostart Applications
+# Autostart Important Applications
 sxhkd &
 nitrogen --restore &
 picom &
@@ -33,3 +33,6 @@ dunst &
 $HOME/.config/polybar/launch.sh &
 copyq &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Autostart User applications
+/home/mohammad_alj/.config/bspwm/autostart.sh

@@ -15,6 +15,7 @@ alias fd='cd $(find ~ -type d | fzf)'
 alias ls=lsd
 alias v=nvim
 alias cls='clear && neofetch'
+alias cmatrix='unimatrix -n -s 96 -l o'
 
 # Paths
 export NVM_DIR="$HOME/.nvm"

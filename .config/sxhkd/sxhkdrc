@@ -16,7 +16,7 @@ super + Return
 
 # file explorer
 super + e
-	thunar
+	nemo
 
 # make sxhkd reload its configuration files:
 super + Escape
