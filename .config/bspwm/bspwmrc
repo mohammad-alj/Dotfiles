@@ -1,5 +1,6 @@
 #! /bin/sh
 
+## [WINDOW MANAGER STUFF]
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
@@ -24,6 +25,9 @@ bspc config focus_follows_pointer true
 
 # Set cursor theme
 xsetroot -cursor_name left_ptr
+
+## [APPLICATIONS]
+export FILE_MANAGER="nemo"
 
 # Autostart Important Applications
 sxhkd &
