@@ -26,22 +26,12 @@ window#waybar {
     padding: 5px 7px;
     margin: 5px;
     border-radius: 5px;
-    background: #1A1B26;
-}
-
-#window {
-    border: 2px solid #79C4F2;
-    color: #79C4F2;
+    background: #1E1E2E;
+    color: #CBA6F7;
 }
 
 window#waybar.empty #window {
     background-color: transparent;
-    border: none;
-}
-
-
-#workspaces {
-    border: 2px solid #79C4F2;
 }
 
 #workspaces button {
@@ -55,7 +45,7 @@ window#waybar.empty #window {
 }
 
 #workspaces button.active {
-    background-color: #79C4F2;
+    background-color: #CBA6F7;
     color: #1A1B26;
 }
 
@@ -63,29 +53,14 @@ window#waybar.empty #window {
     color: #E8748C;
 }
 
-#network {
-    color: #779BEB;
-    border: 2px solid #779BEB;
-}
-
 #network.disconnected {
     color: #E8748C;
     border: 2px solid #E8748C;
 }
 
-#pulseaudio {
-    color: #D2A76A;
-    border: 2px solid #D2A76A;
-}
-
-#pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
-}
-
-#tray {
-    color: #79C4F2;
-    border: 2px solid #79C4F2;
+#tray,
+#workspaces {
+    border: 2px solid #CBA6F7;
 }
 
 #tray>.passive {
@@ -94,11 +69,11 @@ window#waybar.empty #window {
 
 #tray>.needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+    background-color: #E8748C;
 }
 
 #keyboard-state {
-    background: #97e1ad;
+    background: #71CDC3;
     color: #000000;
     padding: 0 0px;
     margin: 0 5px;
@@ -113,18 +88,19 @@ window#waybar.empty #window {
     background: rgba(0, 0, 0, 0.2);
 }
 
-#language {
-    color: #70CDC2;
-    border: 2px solid #70CDC2;
+#pulseaudio {
+    color: #D2A569;
 }
 
-#clock {
-    color: #B194EB;
-    border: 2px solid #B194EB;
+#network {
+    color: #76BFED;
+}
+
+#language {
+    color: #70CDC2;
 }
 
 #custom-power {
     color: #F2758D;
-    padding-right: 10px;
-    border: 2px solid #F2758D;
+    padding-right: 11px;
 }

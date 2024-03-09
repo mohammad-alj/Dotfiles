@@ -2,9 +2,9 @@
     "layer": "top",
     "position": "top",
     "height": 5,
-    "modules-left": ["hyprland/window"],
+    "modules-left": ["custom/power", "hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["tray", "pulseaudio", "network", "hyprland/language", "clock", "custom/power"],
+    "modules-right": ["tray", "hyprland/language", "pulseaudio", "network", "clock"],
 
     "custom/power": {
         "format": "  ",
@@ -34,11 +34,12 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{: %I:%M %p  󰃭 %Y-%m-%d}"
+        "format": "{:  %I:%M %p  󰃭 %Y-%m-%d}",
+        "on-click": "gnome-calendar"
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid}  ",
+        "format-wifi": "  {essid}",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
