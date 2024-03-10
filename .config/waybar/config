@@ -4,7 +4,7 @@
     "height": 5,
     "modules-left": ["hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["custom/terminal", "custom/browser", "custom/apps", "tray", "hyprland/language", "pulseaudio", "network", "clock", "custom/power"],
+    "modules-right": ["custom/terminal", "custom/files", "custom/browser", "custom/apps", "tray", "hyprland/language", "pulseaudio", "network", "clock", "custom/power"],
 
     // Custom modules
     "custom/apps": {
@@ -14,6 +14,10 @@
     "custom/browser": {
         "format": "󰖟 ",
         "on-click": "brave",
+    },
+    "custom/files": {
+        "format": " ",
+        "on-click": "nautilus",
     },
     "custom/terminal": {
         "format": " ",

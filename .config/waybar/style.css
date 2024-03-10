@@ -113,9 +113,13 @@ window#waybar.empty #window {
     margin-left: 5px;
 }
 
+#custom-files {
+    font-size: 17px;
+}
+
 #custom-apps {
     font-size: 17px;
-    margin-left: 6px;
+    margin-left: 3px;
     margin-right: 5px;
     color: #CBA6F7;
 }
