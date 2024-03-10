@@ -2,19 +2,34 @@
     "layer": "top",
     "position": "top",
     "height": 5,
-    "modules-left": ["custom/power", "hyprland/window"],
+    "modules-left": ["hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["tray", "hyprland/language", "pulseaudio", "network", "clock"],
+    "modules-right": ["custom/terminal", "custom/browser", "custom/apps", "tray", "hyprland/language", "pulseaudio", "network", "clock", "custom/power"],
 
+    // Custom modules
+    "custom/apps": {
+        "format": " ",
+        "on-click": "rofi -show drun",
+    },
+    "custom/browser": {
+        "format": "󰖟 ",
+        "on-click": "brave",
+    },
+    "custom/terminal": {
+        "format": " ",
+        "on-click": "kitty",
+    },
     "custom/power": {
-        "format": "  ",
-        "on-click": "wlogout && killall waybar && waybar",
+        "format": "",
+        "on-click": "~/.local/share/bin/powermenu",
     },
     // Modules configuration
     "hyprland/workspaces": {
         "disable-scroll": false,
         "all-outputs": true,
         "warp-on-scroll": true,
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
         "format": " {icon} ",
         "format-icons": {
             "10": "0",
@@ -34,7 +49,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:  %I:%M %p  󰃭 %Y-%m-%d}",
+        "format": "{:  %I:%M %p}",
         "on-click": "gnome-calendar"
     },
     "network": {
@@ -44,25 +59,11 @@
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ipaddr} 󰩟 "
+        "on-click": "~/.local/share/bin/wifimenu"
     },
     "pulseaudio": {
         "scroll-step": 1,
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
+        "format": " {volume}%",
         "on-click": "pavucontrol"
     },
 }

@@ -2,7 +2,7 @@ indicator
 ignore-empty-password
 indicator-thickness=15
 indicator-radius=150
-image=~/Pictures/wallpapers/wallpaper.jpeg
+image=~/Pictures/wallpapers/mocha.png
 clock
 effect-blur=7x5
 effect-vignette=0.5:0.5
