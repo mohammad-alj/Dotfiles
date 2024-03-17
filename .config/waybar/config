@@ -4,7 +4,7 @@
     "height": 5,
     "modules-left": ["hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["custom/terminal", "custom/files", "custom/browser", "custom/apps", "tray", "hyprland/language", "pulseaudio", "network", "clock", "custom/power"],
+    "modules-right": ["custom/terminal", "custom/files", "custom/browser", "custom/apps", "tray", "hyprland/language", "pulseaudio", "network", "clock"],
 
     // Custom modules
     "custom/apps": {
@@ -22,10 +22,6 @@
     "custom/terminal": {
         "format": " ",
         "on-click": "kitty",
-    },
-    "custom/power": {
-        "format": "",
-        "on-click": "~/.local/share/bin/powermenu",
     },
     // Modules configuration
     "hyprland/workspaces": {

@@ -19,13 +19,12 @@ window#waybar {
 #tray,
 #workspaces,
 #window,
-#language,
-#custom-power {
+#language {
     padding: 4px 6px;
     margin: 5px;
     border-radius: 5px;
     background: #1E1E2E;
-    color: #CBA6F7;
+    color: #E3B4D8;
 }
 
 #window {
@@ -47,7 +46,7 @@ window#waybar.empty #window {
 }
 
 #workspaces button.active {
-    background-color: #CBA6F7;
+    background-color: #E3B4D8;
     color: #1A1B26;
 }
 
@@ -62,7 +61,7 @@ window#waybar.empty #window {
 
 #tray,
 #workspaces {
-    border: 2px solid #CBA6F7;
+    border: 2px solid #E3B4D8;
 }
 
 #tray>.passive {
@@ -91,20 +90,15 @@ window#waybar.empty #window {
 }
 
 #pulseaudio {
-    color: #D2A569;
+    color: #EAD3A7;
 }
 
 #network {
-    color: #76BFED;
+    color: #8AD0C6;
 }
 
 #language {
-    color: #70CDC2;
-}
-
-#custom-power {
-    color: #F2758D;
-    margin-right: 20px;
+    color: #A0D49B;
 }
 
 #custom-terminal,
@@ -121,5 +115,5 @@ window#waybar.empty #window {
     font-size: 17px;
     margin-left: 3px;
     margin-right: 5px;
-    color: #CBA6F7;
+    color: #E3B4D8;
 }
