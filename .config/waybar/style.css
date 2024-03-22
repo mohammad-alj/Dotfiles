@@ -27,6 +27,10 @@ window#waybar {
     color: #E3B4D8;
 }
 
+#clock {
+    margin-right: 20px;
+}
+
 #window {
     margin-left: 20px;
 }
